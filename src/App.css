@@ -1,0 +1,161 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom, #3e707b, #87CEEB);
+  color: #333;
+  line-height: 1.6;
+}
+
+.App {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #4A90E2;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Section Styling */
+section {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #2C3E50;
+  border-bottom: 2px solid #4A90E2;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 1.6rem;
+  color: #34495E;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  color: #5D6D7E;
+}
+
+ul li strong {
+  color: #4A90E2;
+}
+
+/* GraphQL & REST Display */
+div {
+  padding: 20px;
+  background-color: #F4F6F6;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+div ul {
+  padding-left: 20px;
+}
+
+div ul li {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+/* Loading & Error Styles */
+div div {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #E74C3C;
+  font-weight: bold;
+}
+
+div div span {
+  color: #27AE60;
+}
+
+/* GraphQL Users Styling */
+h3 {
+  font-size: 1.8rem;
+  color: #2980B9;
+  margin-bottom: 15px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  font-size: 1.1rem;
+  color: #2C3E50;
+}
+
+ul li:hover {
+  background-color: #D5DBDB;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Buttons and Links */
+a {
+  text-decoration: none;
+  color: #2980B9;
+}
+
+a:hover {
+  color: #1ABC9C;
+  text-decoration: underline;
+}
+
+button {
+  background-color: #3498DB;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #2980B9;
+}
+
+/* Footer and Author Section */
+footer {
+  background-color: #34495E;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  margin-top: 40px;
+}
+
+footer p {
+  font-size: 1rem;
+  color: #BDC3C7;
+}
