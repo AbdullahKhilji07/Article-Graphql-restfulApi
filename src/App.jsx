@@ -2,61 +2,17 @@ import React, { useState, useEffect } from 'react';
 import { ApolloClient, InMemoryCache, ApolloProvider, gql, useQuery } from '@apollo/client';
 import './App.css';
 
-// Apollo Client setup for GraphQL
-const client = new ApolloClient({
-  uri: 'https://example-graphql-api.com/graphql',  // Replace with your actual GraphQL endpoint
-  cache: new InMemoryCache(),
-});
-
-// GraphQL query to fetch users
-const GET_USERS = gql`
-  query GetUsers {
-    users {
-      id
-      name
-      email
-    }
-  }
-`;
 
 function Users() {
-  const { loading, error, data } = useQuery(GET_USERS);
-
-  if (loading) return <div>Loading...</div>;
-  if (error) return <div>Error: {error.message}</div>;
 
   return (
     <div>
-      <h3>GraphQL Users</h3>
-      <ul>
-        {data.users.map(user => (
-          <li key={user.id}>
-            {user.name} - {user.email}
-          </li>
-        ))}
-      </ul>
+        
     </div>
   );
 }
 
 function App() {
-  const [restData, setRestData] = useState([]);
-  const [loadingRest, setLoadingRest] = useState(true);
-  const [errorRest, setErrorRest] = useState(null);
-
-  // Fetching data from REST API (JSONPlaceholder)
-  useEffect(() => {
-    fetch('https://jsonplaceholder.typicode.com/users')
-      .then(response => response.json())
-      .then(data => {
-        setRestData(data);
-        setLoadingRest(false);
-      })
-      .catch(error => {
-        setErrorRest(error);
-        setLoadingRest(false);
-      });
-  }, []);
 
   return (
     <div className="App">
